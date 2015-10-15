@@ -1,15 +1,13 @@
 {
   "name": "history-tracker",
   "main": "./lib/main",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Lets you go backwards / forwards in file path history - inspired by XCode",
-  "keywords": [
-  ],
+  "keywords": [],
   "repository": "https://github.com/darrentsung/history-tracker",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
