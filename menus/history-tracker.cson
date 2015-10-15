@@ -1,0 +1,19 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'history-tracker'
+      'submenu': [
+        {
+          'label': 'Go Backwards in History'
+          'command': 'history-tracker:go-backwards-in-history'
+        },
+        {
+          'label': 'Go Foward in History'
+          'command': 'history-tracker:go-forward-in-history'
+        }
+      ]
+    ]
+  }
+]
