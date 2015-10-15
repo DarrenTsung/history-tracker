@@ -4,7 +4,7 @@ path = require 'path'
 module.exports =
 class HistoryTracker
   _subscriptions: null
-  _maxFilesToRemember: 10000
+  _maxPathsToRemember: 1000
   _pathHistory: []
   _currentIndexInHistory: -1 
   _pathJustPopped: null
@@ -44,6 +44,8 @@ class HistoryTracker
       @_currentIndexInHistory++
     
   _removeExtraHistory: ->
+    while @_pathHistory.length > @_maxPathsToRemember
+      @_pathHistory.shift()
     
   _getForwardPathInHistory: ->
     if @_currentIndexInHistory + 1 < @_pathHistory.length
